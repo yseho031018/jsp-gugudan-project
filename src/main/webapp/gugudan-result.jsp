@@ -44,19 +44,20 @@
     </style>
 </head>
 <body>
-    <div class="result-container">
-        <% if (isSuccess) { %>
+<div class="result-container">
+    <% if (isSuccess) { %>
 
-            <h2><%= dan %>단 결과</h2>
-            <% for (int i = 1; i <= 9; i++) { %>
-                <%= dan %> x <%= i %> = <%= dan * i %><br>
-            <% } %>
-        <% } else { %>
-            <p class="error"><%= errorMessage %></p>
-        <% } %>
+    <h2><%= dan %>단 결과</h2>
+    <% for (int i = 1; i <= 9; i++) { %>
+    <%= dan %> x <%= i %> = <%= dan * i %><br>
+    <% } %>
+    <% } else { %>
+    <p class="error"><%= errorMessage %></p>
+    <% } %>
 
-        <hr>
-        <a href="index.jsp">다른 단 계산하기</a>
-    </div>
+    <hr>
+    <a href="index.jsp">다른 단 계산하기</a>
+</div>
 </body>
 </html>
+
